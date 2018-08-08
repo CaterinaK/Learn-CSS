@@ -16,3 +16,7 @@ type — this attribute describes the type of document that you are linking to (
 rel — this attribute describes the relationship between the HTML file and the CSS file. Because you are linking to a stylesheet, the value should be set to stylesheet.
 
 Например, link href="https://www.codecademy.com/stylesheets/style.css" type="text/css" rel="stylesheet"
+
+Чтобы выбрать часть html, нужно использовать идентификатор (selector) - это тег без квадратных скобок. Но так можно только с видимыми частями, а с метадатой (head) такого не получится, например. 
+Идентификатором может быть не только тег, но и атрибут class. Т.е. например class="brand", тогда мы используем .brand для обозначения в css (точку ставить обязательно). 
+
