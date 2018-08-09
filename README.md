@@ -34,4 +34,5 @@ Chaining Selectors (сцепление?): можно выбрать, какие 
 В общем, specificity, как я поняла: id>chained>class>tags
 Можно ещё выбрать конкретные элементы внутри других элементов, например для элемента с классом main-list, который наследуется элементом li: .main-list li{}. 
 
+Adding more than one tag, class, or ID to a CSS selector increases the specificity of the CSS selector.
 
