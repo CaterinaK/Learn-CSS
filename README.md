@@ -19,4 +19,19 @@ rel — this attribute describes the relationship between the HTML file and the 
 
 Чтобы выбрать часть html, нужно использовать идентификатор (selector) - это тег без квадратных скобок. Но так можно только с видимыми частями, а с метадатой (head) такого не получится, например. 
 Идентификатором может быть не только тег, но и атрибут class. Т.е. например class="brand", тогда мы используем .brand для обозначения в css (точку ставить обязательно). 
+Можно задать несколько class, для этого в css нужно добавить элемент, а потом в Html файле дополнить атрибут (без запятой). 
+
+Можно тегать элементы из html по id, для этого нужно в css добавить #имя_Id лучше добавлять по одному. 
+
+Класс используются, когда нужно много элементов стилизировать, а id - когда один. Id>class id>tag. 
+
+Specificity is the order by which the browser decides which CSS styles will be displayed. A best practice in CSS is to style elements while using the lowest degree of specificity, so that if an element needs a new style, it is easy to override. IDs are the most specific selector in CSS, followed by classes, and finally, tags. The only way to override an ID is to add another ID with additional styling. 
+
+Лучше всего в документе использовать спецификацию по тегам по возможности, зачем классы и в самом крайнем случае по id.
+Важная инфа: https://discuss.codecademy.com/t/is-it-possible-for-two-selectors-targeting-the-same-element-to-have-the-same-specificity-if-so-which-styles-win-out/340952
+
+Chaining Selectors (сцепление?): можно выбрать, какие именно элементы html будут относиться к этому селектору. Для этого пишем, например, h1.special, тогда для остальных элементов с классом special это правило не будет выполняться. A chained or qualified selector has a higher specificity than a class selector but a lower specificity than the id selector. 
+В общем, specificity, как я поняла: id>chained>class>tags
+Можно ещё выбрать конкретные элементы внутри других элементов, например для элемента с классом main-list, который наследуется элементом li: .main-list li{}. 
+
 
