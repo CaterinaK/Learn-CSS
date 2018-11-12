@@ -36,3 +36,25 @@ Chaining Selectors (сцепление?): можно выбрать, какие 
 
 Adding more than one tag, class, or ID to a CSS selector increases the specificity of the CSS selector.
 
+CSS VISUAL RULES 
+
+Типографика (font family). По умолчаю везде Times New Roman. Чтобы шрифт отображался, нужно, чтобы он был установлен на компе пользователя. Хорошо использовать не более 2-3 шрифтов на странице. Если название шрифта состоит из нескольких слов, то берём его в кавычки (привет булевым запросам). 
+Вот тут список шрифтов, которые чаще всего уже установлены в ОС: https://www.cssfontstack.com/ 
+
+font-size - размер шрифта (в пикселях px). Если не определяем, то чаще всего браузеры используют 16 пикселей. 
+font-weight - толщина. Есть bold и normal. Normal чтобы в отдельном параграфе менять толщину, если во всём остальном тексте выбран другой параметр. Bold есть не у всех шрифтов. 
+
+text-align - расположение текста. По умолчанию он всегда слева в браузере. 
+left — aligns text to the left hand side of its parent element, which in this case is the browser.
+center — centers text inside of its parent element.
+right — aligns text to the right hand side of its parent element.
+
+цвет: color и background-color. По сочетаемости цветов советуют вот эту книгу:
+https://issuu.com/serlutin/docs/______________-________________________ 
+
+Opacity (непрозрачность). От 1 (видим) до 0 (невидим). 
+
+ background-image: url("images/mountains.jpg")
+
+
+
